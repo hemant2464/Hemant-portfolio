@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hemant Chandak</title>
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Hemant Chandak</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#certification">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <img id="modeToggle" class="icon color-icon" src="./assets/theme_light.png"
+            src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Color them icon" />
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Hemant Chandak</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#certification" onclick="toggleMenu()">Certifications</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li>
+          <img id="modeToggle2" class="icon color-icon" src="./assets/theme_light.png"
+            src-light="./assets/theme_light.png" src-dark="./assets/theme_dark.png" alt="Color them icon" />
+        </li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class ="dp" src="./assets/hemant-dp.jpg" alt="Hemant Chandak profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Hemant Chandak</h1>
+      <p class="section__text__p2">Undergraduate Researcher</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Curriculum_Vitae.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+          src-dark="./assets/linkedin_dark.png" alt="My LinkedIn profile" class="icon linkedin-icon"
+          onclick="location.href='https://www.linkedin.com/in/hemant2464/'" />
+        <img src="./assets/github_light.png" src-light="./assets/github_light.png" src-dark="./assets/github_dark.png"
+          alt="My github profile" class="icon github-icon" onclick="location.href='https://github.com/hemant2464'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <!-- <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div> -->
+    <div class="about-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <img src="./assets/experience_light.png" src-light="./assets/experience_light.png"
+            src-dark="./assets/experience_dark.png" alt="Experience icon" class="icon" />
+          <h3>Undergraduate Researcher</h3>
+          <p>Manipal University Jaipur</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/experience_light.png" src-light="./assets/experience_light.png"
+            src-dark="./assets/experience_dark.png" alt="Experience icon" class="icon" />
+          <h3>Machine Learning Intern Intern</h3>
+          <p>ILACC</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/experience_light.png" src-light="./assets/experience_light.png"
+            src-dark="./assets/experience_dark.png" alt="Experience icon" class="icon" />
+          <h3>Software Developer Intern</h3>
+          <p>UrJobMart</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/experience_light.png" src-light="./assets/experience_light.png"
+            src-dark="./assets/experience_dark.png" alt="Experience icon" class="icon" />
+          <h3>Research Assistant Intern</h3>
+          <p>IIIT-H</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/education_light.png" src-light="./assets/education_light.png"
+            src-dark="./assets/education_dark.png" alt="Education icon" class="icon" />
+          <h3>Education</h3>
+          <p>B.tech<br />Computer and Communication Enginnering</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p>
+          Hello, I'm Hemant Chandak, a Computer and Communication Engineering student at Manipal University Jaipur, 
+          set to graduate in May 2024. My focus on Computational Intelligence has taken me through a diverse academic journey, 
+          covering subjects like Data Structures, Machine Learning, and Blockchain.
+        <br>
+        In terms of practical experience, I've had the privilege of serving as a Research Assistant under the guidance of 
+        Dr. Dinesh Kumar Saini, contributing to some impactful articles. My internships at the Indo Latin American Chamber of Commerce and 
+        UrJobMart provided me with opportunities to implement innovative solutions.
+          <br>
+        The projects close to my heart, such as "Graph Neural Networks for Drug Repurposing" and 
+        "Analysis of Deep Learning Methods for Short-Term Solar Power Forecasting," showcase my dedication 
+        to staying at the forefront of technological advancements. Proficient in Python, Java, and C++, I bring a versatile skill set, 
+        including expertise in TensorFlow and PyTorch, and familiarity with Git, Docker, and SQL/NoSQL databases.
+          <br>
+      Beyond the world of codes and algorithms, I actively engage in community service, organize technical workshops, and have earned recognitions like the SMMCT Scholarship 
+      and a noteworthy rank in an engineering entrance exam.
+          <br>
+I'm all about connections and collaborations, eager to explore new opportunities. Feel free to check out my portfolio, and let's connect for potential ventures or just a friendly conversation!
+        </p>
+      </div>
+    </div>
+    </div>
+    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+      alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <!--                         SKILL SET                     -->
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming Languages</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C/C++</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>R </h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Scala</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Ruby</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frameworks & Libraries</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TensorFlow</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PyTorch</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Scikit-Learn</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Keras</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Pandas</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>NumPy</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Django/Flask</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Tools & Technologies</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Docker</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Kuberbetes</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Jupyter Notebooks</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>SQL/NoSQL Databases</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Hadoop</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>LaTeX</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+      alt="Arrow icon" class="icon arrow" onclick="location.href='./#certification'" />
+  </section>
+  <!--            Certifications                  -->
+  <section id="certification">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="cert-title">Certifications</h1>
+    <div class="c-details-container">
+      <div class="certification-about-containers">
+        <div class="certification-details-container">
+          <!-- <h2 class="experience-sub-title">Programming Languages</h2> -->
+          <div class="certification-article-container">
+            <article class="certification-article">
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3><a class='certlink' href="https://coursera.org/share/80ea0291ce1ca63d5ed98a87ea2119ed">Generative
+                    Adversial Netwroks (GANs) <i>Specialization</i></a></h3>
+                <p>DeepLearning.AI</p>
+
+              </div>
+              <br>
+            </article>
+            <article class="certification-article">
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3><a class='certlink' href="https://coursera.org/share/17ac40385d128c3269bbbc3710fbac1f">TensorFlow
+                    Developer <i>Professional Certificate</i></a></h3>
+                <p>DeepLearning.AI</p>
+
+              </div>
+              <br>
+            </article>
+            <article class="certification-article">
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3><a class='certlink' href="https://coursera.org/share/f96218bd265ff02fcaadb777a651cabe">Web3 &
+                    Blockchain in Global Commerce <i>Specialization</i></a></h3>
+                <p>INSEAD</p>
+
+              </div>
+              <br>
+            </article>
+            <article class="certification-article">
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3><a class='certlink' href="https://coursera.org/share/f84b33b0cf78bfa6909924724368cdb6">Hands on IoT
+                    <i>Specialization</i></a></h3>
+                <p>UIUC</p>
+
+              </div>
+              <br>
+            </article>
+            <article class="certification-article">
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3><a class='certlink' href="https://coursera.org/share/db919e45111d49813ecfc99a5ceb9f83">Blockcahin
+                    <i>Specialization</i></a></h3>
+                <p>University of Buffalo</p>
+
+              </div>
+              <br>
+            </article>
+            <article class="certification-article">
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3><a class='certlink' href="https://coursera.org/share/b1ec74b045d57df4caa4279dced9d329">Machine
+                    Learning for all</a></h3>
+                <p>University of London</p>
+              </div>
+              <br>
+            </article>
+            <article class="certification-article">
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3><a class='certlink' href="https://coursera.org/share/9d1472d357923816e0e3a149f4e2e9bf">AI for
+                    Everyone</a></h3>
+                <p>DeepLearning.AI</p>
+              </div>
+              <br>
+            </article>
+            <article class="certification-article">
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3><a class='certlink' href="https://coursera.org/share/4f777341a71c1d29c2c755feee7d1bb1">Introduction
+                    to Computer Vision & Image Processing</a></h3>
+                <p>IBM</p>
+              </div>
+              <br>
+            </article>
+            <article class="certification-article">
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3><a class='certlink' href="https://coursera.org/share/a75bc8037734e0c05e369bee31206042">Introduction
+                    to Big Data with Spark & Hadoop</a></h3>
+                <p>IBM</p>
+              </div>
+              <br>
+            </article>
+            <article class="certification-article">
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3><a class='certlink' href="https://coursera.org/share/e77f912808bc1299d88e783e47686975">Marketing
+                    Analytics Foundation</a></h3>
+                <p>Meta</p>
+              </div>
+              <br>
+            </article>
+            <article class="certification-article">
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3><a class='certlink' href="https://coursera.org/share/ae6c3c99b2114946fabe49169fe416e2">Generate
+                    Synthetic Images with DCGANs in Keras <i>Project</i></a></h3>
+                <p>Coursera Project Network</p>
+              </div>
+              <br>
+            </article>
+            <article class="certification-article">
+              <img src="./assets/checkmark_light.png" src-light="./assets/checkmark_light.png"
+                src-dark="./assets/checkmark_dark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3><a class='certlink' href="https://coursera.org/share/051597b05b2ca4c982a14a769e0ce2cc">Ordered Data
+                    Structures</a></h3>
+                <p>UIUC</p>
+              </div>
+              <br>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+      alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  
+
+  <!--PROJECT SECTION -->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container-proj">
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/gnn.jpg" alt="Project 1" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Graph Neural Networks for Drug Repurposing</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="showDescription('description1')">
+            About
+          </button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/solarpower-proj-pic.png" alt="Project 2" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Analysis of DL Methods for Short-Term Solar Power Forecasting</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/hemant2464/Solar-Power-Forcasting'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="showDescription('description2')">
+            About
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/moleculardrugdes.jpg" alt="Project 3" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Molecular Drug Design</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/hemant2464'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="showDescription('description3')">
+            About
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/solargraph.jpeg" alt="Project 1" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">From Sunlight To Sustainability</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/hemant2464'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="showDescription('description4')">
+            About
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/fogcomp.webp" alt="Project 1" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Mathematical Modelling of Cybersecurity for Cloud, Fog, and Edge</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/hemant2464'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="showDescription('description5')">
+            About
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/GRB211211A.png" alt="Project 1" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Computing the HOP groups of 100 Gamma Ray Bursts</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/hemant2464'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="showDescription('description6')">
+            About
+          </button>
+        </div>
+      </div>
+
+    </div>
+    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+      alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <!---OVERLAY SECTION-->
+  <div class="overlay" id="description1">
+    <div class="overlay-content">
+      <h2>Graph Neural Networks for Drug Repurposing</h2>
+        
+        <p >Proposed an innovative, incremental learning methodology that demonstrated exceptional outcomes surpasing alternative node type-agnostic approaches.
+          </p>
+      <button class="btn btn-color-2 close-btn" onclick="hideDescription('description1')">Close</button>
+    </div>
+  </div>
+  <div class="overlay" id="description2">
+    <div class="overlay-content">
+      <h2>Analysis of DL Methods for Short-Term Solar Power Forecasting</h2>
+        
+        <p >Investigating the effect of different hyperparameters and network architecture on the accuracy and generalization performance of DL models for solar power forecasting.
+          </p>
+      <button class="btn btn-color-2 close-btn" onclick="hideDescription('description2')">Close</button>
+    </div>
+  </div>
+  <div class="overlay" id="description3">
+    <div class="overlay-content">
+      <h2>Molecular Drug Design<br></h2>
+        <h5><i>@ IIT Hyderabad</i></h5>
+        <p >Utilizing the Python programming language and leveraging various libraries, I conducted a comprehensive data extraction, 
+          cleaning, and preparation process to pave the way for subsequent analysis. Employing a range of algorithms and approaches, 
+          including regression models and deep learning architectures, I endeavored to construct a predictive model capable of accurately 
+          estimating the binding affinity of small molecules to the target protein.
+            <br>
+          Continuing the project, I went on to develop a machine learning model specifically designed to forecast the binding affinity of 
+          small molecules to a predefined target protein. This involved leveraging data derived from existing experimental studies to enhance the model's predictive capabilities.</p>
+      <button class="btn btn-color-2 close-btn" onclick="hideDescription('description3')">Close</button>
+    </div>
+  </div>
+  <div class="overlay" id="description4">
+    <div class="overlay-content">
+      <h2>From Sunlight To Sustainability:<br></h2>
+        <h5>Investigating Callenges and Stratergies in Solar Energy Generation, Transmission, and Storage for Sustainable Power Systems</h5>
+        <p>Conducted a comprehensive review of the current landscape of solar energy generation, transmission, and storage in India, 
+          encompassing factors such as installed capacity, policy frameworks, and the regulatory environment.
+          <br>
+          Undertook an in-depth analysis to assess the technical and economic feasibility of various solar energy 
+          technologies in the Indian context, including photovoltaic systems, concentrated solar power, and energy storage systems.
+          <br>
+          Engaged in a detailed discussion on the challenges and opportunities associated with scaling up solar energy deployment in India. 
+          This included an exploration of issues related to financing, infrastructure development, 
+          and stakeholder engagement to provide a holistic perspective on the subject.</p>
+      <button class="btn btn-color-2 close-btn" onclick="hideDescription('description4')">Close</button>
+    </div>
+  </div>
+  <div class="overlay" id="description5">
+    <div class="overlay-content">
+      <h2>Mathematical Modelling of Cybersecurity for Cloud, Fog, and Edge<br></h2>
+        <h5><i>Research Project @ Manipal University Jaipur</i></h5>
+        <p >To capture the unique characteristics of cloud, fog, and edge computing environments, which include the mobility of devices, 
+          the heterogeneity of resources, and the flexibility of network connectivity, we have adapted the SEIR model into the VBAD model. This modification involves employing a set of differential equations to articulate the dynamics governing the movement of infected 
+          devices across various compartments within the VBAD framework.</p>
+      <button class="btn btn-color-2 close-btn" onclick="hideDescription('description5')">Close</button>
+    </div>
+  </div>
+  <div class="overlay" id="description6">
+    <div class="overlay-content">
+      <h2>Computing the HOP groups of 100 Gamma Ray Bursts<br></h2>
+        
+        <p >Designed and implemented a robust web scraping solution to extract data pertaining to 100 Gamma-Ray Bursts (GRBs) 
+          from the Swift/BAT data catalogue. Subsequently, generated insightful Light Curves by plotting the Flux and T90 information 
+          derived from the extracted data files for the identified GRBs.</p>
+      <button class="btn btn-color-2 close-btn" onclick="hideDescription('description6')">Close</button>
+    </div>
+  </div>
+
+
+  <!-- Community service
+  <section id="projects">
+    <p class="section__text__p1">Community Service</p>
+    <h1 class="title">Works</h1>
+    <div class="experience-details-container-proj">
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Graph Neural Networks fro Drug Repurposing</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Website
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="showDescription('descriptionA')">
+            About
+          </button>
+        </div>
+      </div>
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Analysis of DL Methods for Short-Term Solar Power Forecasting</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Website
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="showDescription('descriptionB')">
+            About
+          </button>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Molecular Drug Design</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Website
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="showDescription('descriptionC')">
+            About
+          </button>
+        </div>
+      </div>
+      
+      
+      
+
+    </div>
+    <img src="./assets/arrow_light.png" src-light="./assets/arrow_light.png" src-dark="./assets/arrow_dark.png"
+      alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <!---OVERLAY Section of community service -->
+  <!-- <div class="overlay" id="descriptionA">
+    <div class="overlay-content">
+      <h2>Graph Neural Networks for Drug Repurposing</h2>
+        
+        <p >Proposed an innovatove, incremental learning methodology that demonstrated exceptional outcomes surpasinf alternative node type-agnostic approaches.
+          </p>
+      <button class="btn btn-color-2 close-btn" onclick="hideDescription('descriptionA')">Close</button>
+    </div>
+  </div>
+  <div class="overlay" id="descriptionB">
+    <div class="overlay-content">
+      <h2>Graph Neural Networks for Drug Repurposing</h2>
+        
+        <p >Proposed an innovatove, incremental learning methodology that demonstrated exceptional outcomes surpasinf alternative node type-agnostic approaches.
+          </p>
+      <button class="btn btn-color-2 close-btn" onclick="hideDescription('descriptionB')">Close</button>
+    </div>
+  </div>
+  <div class="overlay" id="descriptionC">
+    <div class="overlay-content">
+      <h2>Graph Neural Networks for Drug Repurposing</h2>
+        
+        <p >Proposed an innovatove, incremental learning methodology that demonstrated exceptional outcomes surpasinf alternative node type-agnostic approaches.
+          </p>
+      <button class="btn btn-color-2 close-btn" onclick="hideDescription('descriptionC')">Close</button>
+    </div>
+  </div> --> -->
+
+
+
+  <!--            Contact                -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email_light.png" src-light="./assets/email_light.png" src-dark="./assets/email_dark.png"
+          alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="chandak.hndc@gmail.com">chandak.hndc@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin_light.png" src-light="./assets/linkedin_light.png"
+          src-dark="./assets/linkedin_dark.png" alt="My LinkedIn profile" class="icon linkedin-icon"
+          onclick="location.href='https://www.linkedin.com/in/hemant2464/'" />
+        <p><a href="https://www.linkedin.com/in/hemant2464/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#certification">Certifications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Hemant Chandak. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
